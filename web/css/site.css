@@ -1,0 +1,1594 @@
+/* Estilos Globales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+/* Admisión móvil (replicar diseño de referencia) */
+@media (max-width: 768px) {
+    .admision-page .admision-hero {
+        margin-top: 70px;
+        min-height: 170px;
+    }
+
+    .admision-page .admision-hero-caption {
+        min-height: 170px;
+        padding: 1.2rem 0.9rem;
+    }
+
+    .admision-page .admision-hero-title,
+    .admision-page .admision-hero-year {
+        font-size: 2rem;
+        margin-bottom: 0.1rem;
+        line-height: 1.05;
+    }
+
+    .admision-page .admision-hero-subtitle {
+        font-size: 0.92rem;
+        margin-bottom: 0.05rem;
+    }
+
+    .admision-page .admision-hero-text {
+        font-size: 0.82rem;
+        line-height: 1.2;
+    }
+
+    .admision-page .admision-pasos {
+        padding-top: 1.3rem !important;
+        padding-bottom: 1.3rem !important;
+    }
+
+    .admision-page .admision-pasos h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .admision-page .admision-paso {
+        padding: 0.6rem 0.35rem;
+    }
+
+    .admision-page .admision-paso .fa-3x {
+        font-size: 2.3rem !important;
+    }
+
+    .admision-page .admision-paso h3 {
+        font-size: 1.45rem;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .admision-page .admision-paso p {
+        font-size: 0.9rem !important;
+        line-height: 1.2;
+    }
+
+    .admision-page .admision-requisitos {
+        padding-top: 1.1rem !important;
+        padding-bottom: 1.2rem !important;
+    }
+
+    .admision-page .admision-requisitos h2 {
+        font-size: 2rem;
+        margin-bottom: 0.2rem !important;
+    }
+
+    .admision-page .admision-requisitos > .container > p {
+        font-size: 0.76rem;
+        line-height: 1.15;
+        margin-bottom: 0.55rem !important;
+    }
+
+    .admision-page .admision-requisitos-tabs {
+        width: 100%;
+        margin-bottom: 0.35rem !important;
+    }
+
+    .admision-page .admision-requisitos-tabs .nav-link {
+        font-size: 0.74rem;
+        padding: 0.58rem 0.2rem;
+    }
+
+    .admision-page .admision-requisitos-box {
+        padding: 0.95rem !important;
+        border-radius: 0 0 6px 6px;
+    }
+
+    .admision-page .admision-requisitos-box h4 {
+        font-size: 1.55rem;
+        margin-bottom: 0.45rem !important;
+    }
+
+    .admision-page .admision-requisitos-box li {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        margin-bottom: 0.22rem !important;
+    }
+
+    .admision-page .admision-documentos {
+        padding-top: 1.4rem !important;
+        padding-bottom: 1.35rem !important;
+    }
+
+    .admision-page .admision-documentos h2 {
+        font-size: 2.2rem;
+        line-height: 0.95;
+        margin-bottom: 1rem !important;
+    }
+
+    .admision-page .admision-documentos .btn-danger {
+        border-radius: 3px;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 0.98rem;
+        padding-top: 0.7rem !important;
+        padding-bottom: 0.7rem !important;
+    }
+
+    .admision-page .contact-section {
+        margin-top: 0 !important;
+        padding-top: 1.4rem !important;
+        padding-bottom: 1.4rem !important;
+    }
+
+    .admision-page .contact-section h2 {
+        font-size: 2.45rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+
+    .admision-page .contact-section .lead {
+        font-size: 0.95rem;
+        line-height: 1.2;
+        margin-bottom: 0.7rem !important;
+    }
+
+    .admision-page .contact-section .fs-5 {
+        font-size: 0.82rem !important;
+        margin-bottom: 0.45rem !important;
+    }
+
+    .admision-page .contact-section .form-control {
+        font-size: 0.78rem;
+        height: 36px;
+        border-radius: 2px;
+    }
+
+    .admision-page .contact-section textarea.form-control {
+        height: 62px;
+    }
+
+    .admision-page .contact-section .btn-danger {
+        font-size: 1.35rem;
+        border-radius: 0;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+/* Colores Personalizados */
+.bg-custom-blue {
+    background-color: #1a2b4b;
+    /* Azul oscuro del diseño */
+}
+
+.text-dark-blue {
+    color: #1a2b4b;
+}
+
+.bg-light-blue {
+    background-color: #eef4fb;
+    /* Light blue background */
+}
+
+.bg-light-blue-content {
+    background-color: #e3effd;
+}
+
+/* Header Reducido al hacer Scroll */
+.navbar {
+    transition: all 0.4s ease;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.ene-navbar .navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.ene-nav-actions .btn {
+    border-radius: 6px;
+    text-transform: none;
+    letter-spacing: 0;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+}
+
+.ene-btn-virtual {
+    background: #e7edf6;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #1a2b4b;
+}
+
+.ene-btn-virtual:hover {
+    background: #ffffff;
+    color: #1a2b4b;
+}
+
+.ene-btn-intranet {
+    background: #ffc107;
+    border: 1px solid #ffc107;
+    color: #1a2b4b;
+}
+
+.ene-btn-intranet:hover {
+    background: #ffcf3a;
+    border-color: #ffcf3a;
+    color: #1a2b4b;
+}
+
+.navbar.scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(26, 43, 75, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    transition: all 0.4s ease;
+}
+
+.navbar.scrolled .navbar-brand img {
+    height: 50px !important;
+    /* Reducir logo */
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    margin: 0 10px;
+    font-weight: 600;
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffc107;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Sección Hero (Slider de Imágenes) */
+.hero-section {
+    margin-top: 106px;
+    /* Empujar hacia abajo para que NO lo tape el header fijo */
+    padding-top: 0;
+    height: 85vh;
+    /* Altura mantenida */
+    min-height: 500px;
+}
+
+.hero-section .carousel-item {
+    height: 85vh;
+    min-height: 500px;
+}
+
+.hero-section img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-section .carousel-caption {
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.ene-hero-subtitle {
+    max-width: 860px;
+}
+
+.ene-hero-cta {
+    border-radius: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.hero-section .carousel-indicators [data-bs-target] {
+    width: 22px;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-section .carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.hero-section .overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+/* Imágenes de Noticias (Tamaño Uniforme) */
+.news-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: calc(0.375rem - 1px);
+    border-top-right-radius: calc(0.375rem - 1px);
+}
+
+/* Tarjetas y Efectos Hover */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-overlay {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* Tabs de Bienvenida (como en diseño) */
+.ene-tabs {
+    display: flex;
+    width: 100%;
+    background: #e7edf6;
+    border: 1px solid rgba(26, 43, 75, 0.18);
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+.ene-tab {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.6px;
+    color: #1a2b4b;
+    background: #ffffff;
+    border-right: 1px solid rgba(26, 43, 75, 0.14);
+}
+
+.ene-tab:last-child {
+    border-right: none;
+}
+
+.ene-tab:hover {
+    background: #f4f7fb;
+    color: #1a2b4b;
+}
+
+.ene-tab.is-active {
+    background: #1a2b4b;
+    color: #ffffff;
+}
+
+/* Vida escolar (carrusel como Figma) */
+.school-life-carousel {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background: #000;
+}
+
+.school-life-img {
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.school-life-overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg,
+            rgba(0, 0, 0, 0.55) 0%,
+            rgba(0, 0, 0, 0.18) 55%,
+            rgba(0, 0, 0, 0.0) 100%);
+    z-index: 2;
+}
+
+.school-life-caption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    color: #fff;
+}
+
+.school-life-caption .container {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.school-life-title {
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin: 0 0 0.4rem 0;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.school-life-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    opacity: 0.95;
+    line-height: 1.25;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+.school-life-cta {
+    border-radius: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.school-life-carousel .carousel-control-prev,
+.school-life-carousel .carousel-control-next {
+    width: 7%;
+    z-index: 4;
+}
+
+.school-life-carousel .carousel-control-prev-icon,
+.school-life-carousel .carousel-control-next-icon {
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
+}
+
+@media (max-width: 768px) {
+    .school-life-carousel,
+    .school-life-img {
+        height: 300px;
+    }
+
+    .school-life-caption .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .school-life-title {
+        font-size: 2rem;
+    }
+}
+
+/* Botones y Animaciones */
+.btn {
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    /* Botones forma de píldora */
+}
+
+.btn-lg {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #1a2b4b;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #1a2b4b;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-danger:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #dc3545;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #0d6efd;
+}
+
+/* Animaciones del Carrusel */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate-up {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+
+.delay-100 {
+    animation-delay: 0.2s;
+}
+
+.delay-200 {
+    animation-delay: 0.4s;
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-size: 50%;
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Botones Azules Personalizados (Sección Bienvenida) */
+.btn-custom-blue {
+    background-color: #1a2b4b;
+    color: white;
+    border: 1px solid #1a2b4b;
+}
+
+.btn-custom-blue:hover,
+.btn-custom-blue:active,
+.btn-custom-blue:focus {
+    background-color: #132038;
+    color: white;
+    border-color: #132038;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-custom-blue {
+    color: #1a2b4b;
+    border: 1px solid transparent;
+    /* No border initially for cleaner look, or solid if preferred */
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.btn-outline-custom-blue:hover {
+    background-color: #e3effd;
+    color: #1a2b4b;
+    transform: translateY(-2px);
+}
+
+#footer {
+    font-size: 0.9rem;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffc107;
+    color: #1a2b4b !important;
+    border-color: #ffc107;
+}
+
+/* Estilos Legacy Yii2 (Mantenidos por compatibilidad) */
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+a.asc:after,
+a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* Página Admisión */
+.admision-hero {
+    position: relative;
+    min-height: 420px;
+    margin-top: 106px;
+    overflow: hidden;
+    background: #000;
+}
+
+.admision-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.admision-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.admision-hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    padding: 4rem 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.admision-hero-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 0.25rem 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.admision-hero-year {
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.admision-hero-subtitle {
+    font-size: 1.35rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.admision-hero-text {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.95;
+}
+
+.admision-paso {
+    padding: 1.5rem;
+}
+
+.admision-requisitos-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min(760px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0;
+    border: 1px solid rgba(26, 43, 75, 0.12);
+    background: #e7edf6;
+}
+
+.admision-requisitos-tabs .nav-item {
+    margin: 0 !important;
+}
+
+.admision-requisitos-tabs .nav-link {
+    width: 100%;
+    color: #1a2b4b;
+    font-weight: 700;
+    padding: 0.78rem 0.5rem;
+    border-radius: 0;
+    border: 0;
+    background: #e7edf6;
+    text-align: center;
+}
+
+.admision-requisitos-tabs .nav-link.active {
+    background: #1a2b4b;
+    color: #fff;
+}
+
+.admision-requisitos-tabs .nav-link::after {
+    display: none !important;
+}
+
+.admision-requisitos-box h4 {
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.admision-requisitos-box ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.admision-requisitos-box li {
+    position: relative;
+    padding-left: 16px;
+}
+
+.admision-requisitos-box li i {
+    display: none !important;
+}
+
+.admision-requisitos-box li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ff3c3c;
+    font-weight: 700;
+}
+
+.contact-section .overlay {
+    z-index: 1;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Página Galería */
+.galeria-hero {
+    position: relative;
+    min-height: 320px;
+    margin-top: 106px;
+    overflow: hidden;
+    background: #000;
+}
+
+.galeria-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(2px);
+}
+
+.galeria-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.galeria-hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding: 3rem 1rem;
+}
+
+.galeria-hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.galeria-filtro-btn {
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 43, 75, 0.2);
+    background: #e7edf6;
+    color: #1a2b4b;
+}
+
+.galeria-filtro-activo {
+    background: #1a2b4b !important;
+    color: #fff !important;
+    border-color: #1a2b4b !important;
+}
+
+.galeria-item {
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.galeria-img {
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.galeria-item:hover .galeria-img {
+    transform: scale(1.03);
+}
+
+.galeria-zoom {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc107;
+    color: #1a2b4b;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.galeria-zoom:hover {
+    background: #1a2b4b;
+    color: #fff;
+}
+
+/* Galería móvil (diseño referencia) */
+@media (max-width: 768px) {
+    .galeria-page .galeria-hero {
+        margin-top: 68px;
+        min-height: 156px;
+    }
+
+    .galeria-page .galeria-hero-caption {
+        min-height: 156px;
+        padding: 1rem 0.8rem;
+    }
+
+    .galeria-page .galeria-hero-title {
+        font-size: 2rem;
+    }
+
+    .galeria-page .galeria-filtros {
+        padding-top: 1.15rem !important;
+        padding-bottom: 0.85rem !important;
+    }
+
+    .galeria-page .galeria-filtros .d-flex {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.8rem !important;
+    }
+
+    .galeria-page .galeria-filtros .dropdown {
+        width: 100%;
+    }
+
+    .galeria-page .galeria-filtro-btn {
+        width: 100%;
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 0.95rem 1rem;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .galeria-page .galeria-grid {
+        padding-top: 0.8rem !important;
+        padding-bottom: 1.8rem !important;
+    }
+
+    .galeria-page .galeria-grid .row {
+        --bs-gutter-x: 0.55rem;
+        --bs-gutter-y: 0.55rem;
+    }
+
+    .galeria-page .galeria-grid .col-md-6,
+    .galeria-page .galeria-grid .col-lg-4 {
+        width: 50%;
+        flex: 0 0 auto;
+    }
+
+    .galeria-page .galeria-item {
+        border-radius: 6px;
+    }
+
+    .galeria-page .galeria-img {
+        aspect-ratio: 0.95;
+    }
+
+    .galeria-page .galeria-zoom {
+        width: 22px;
+        height: 22px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        font-size: 0.72rem;
+    }
+}
+
+/* Página Noticias */
+.noticias-hero {
+    position: relative;
+    min-height: 320px;
+    margin-top: 106px;
+    overflow: hidden;
+    background: #000;
+}
+
+.noticias-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(2px);
+}
+
+.noticias-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.noticias-hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding: 3rem 1rem;
+}
+
+.noticias-hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.noticias-filtro-btn {
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 43, 75, 0.2);
+    background: #e7edf6;
+    color: #1a2b4b;
+}
+
+.noticias-filtro-activo {
+    background: #1a2b4b !important;
+    color: #fff !important;
+    border-color: #1a2b4b !important;
+}
+
+.noticias-card-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.noticias-card-badge {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: #ffc107 !important;
+    color: #1a2b4b !important;
+    padding: 0.5rem 0.9rem;
+    font-weight: 600;
+}
+
+/* Página Revista */
+.revista-hero {
+    position: relative;
+    min-height: 320px;
+    margin-top: 106px;
+    overflow: hidden;
+    background: #000;
+}
+
+.revista-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(2px);
+}
+
+.revista-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.revista-hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding: 3rem 1rem;
+}
+
+.revista-hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.revista-filtro-btn {
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba(26, 43, 75, 0.2);
+    background: #e7edf6;
+    color: #1a2b4b;
+}
+
+.revista-filtro-activo {
+    background: #1a2b4b !important;
+    color: #fff !important;
+    border-color: #1a2b4b !important;
+}
+
+.revista-portada {
+    background: #e3effd;
+    border: 1px solid rgba(26, 43, 75, 0.15);
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.revista-portada img {
+    display: block;
+    border-radius: 4px;
+}
+
+/* Revista móvil (diseño referencia) */
+@media (max-width: 768px) {
+    .revista-page .revista-hero {
+        margin-top: 68px;
+        min-height: 156px;
+    }
+
+    .revista-page .revista-hero-caption {
+        min-height: 156px;
+        padding: 1rem 0.8rem;
+    }
+
+    .revista-page .revista-hero-title {
+        font-size: 2rem;
+    }
+
+    .revista-page .revista-filtros {
+        padding-top: 1.2rem !important;
+        padding-bottom: 0.8rem !important;
+    }
+
+    .revista-page .revista-filtros .d-flex {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.8rem !important;
+    }
+
+    .revista-page .revista-filtros .dropdown {
+        width: 100%;
+    }
+
+    .revista-page .revista-filtro-btn {
+        width: 100%;
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 0.92rem 1rem;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .revista-page .revista-content {
+        padding-top: 0.9rem !important;
+        padding-bottom: 1.6rem !important;
+    }
+
+    .revista-page .revista-content .row {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+    }
+
+    .revista-page .revista-content .col-md-6:nth-child(n+2) {
+        display: none;
+    }
+
+    .revista-page .revista-portada {
+        min-height: 390px;
+        border-radius: 10px;
+        border: 1px solid rgba(26, 43, 75, 0.35);
+        background: #cfdaf0;
+        padding: 0;
+    }
+
+    .revista-page .revista-portada img,
+    .revista-page .revista-portada p {
+        display: none;
+    }
+}
+
+/* Página Nuestro Equipo */
+.equipo-hero {
+    position: relative;
+    min-height: 320px;
+    margin-top: 106px;
+    overflow: hidden;
+    background: #000;
+}
+
+.equipo-hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(2px);
+}
+
+.equipo-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.equipo-hero-caption {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    padding: 3rem 1rem;
+}
+
+.equipo-hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.equipo-card-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.equipo-card {
+    transition: transform 0.3s ease;
+}
+
+.equipo-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Personal móvil (diseño referencia) */
+@media (max-width: 768px) {
+    .equipo-page .equipo-hero {
+        margin-top: 68px;
+        min-height: 156px;
+    }
+
+    .equipo-page .equipo-hero-caption {
+        min-height: 156px;
+        padding: 1rem 0.8rem;
+    }
+
+    .equipo-page .equipo-hero-title {
+        font-size: 1.95rem;
+    }
+
+    .equipo-page .equipo-section {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .equipo-page .equipo-section .container > h2 {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem !important;
+    }
+
+    .equipo-page .equipo-section .row {
+        --bs-gutter-x: 0.7rem;
+        --bs-gutter-y: 0.7rem;
+    }
+
+    .equipo-page .equipo-card {
+        text-align: left !important;
+    }
+
+    .equipo-page .equipo-card-img {
+        width: 100%;
+        aspect-ratio: 1.2;
+        border-radius: 2px;
+    }
+
+    .equipo-page .equipo-card h5 {
+        margin-top: 0.3rem !important;
+        margin-bottom: 0.1rem !important;
+        font-size: 0.78rem;
+        line-height: 1.15;
+        font-weight: 500 !important;
+    }
+
+    .equipo-page .equipo-card p {
+        font-size: 0.72rem;
+        color: #6b7280 !important;
+    }
+}
+
+/* Home móvil (revisión final) */
+@media (max-width: 768px) {
+    .navbar {
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+    }
+
+    .navbar-brand img {
+        height: 40px !important;
+    }
+
+    .ene-nav-actions {
+        display: none !important;
+    }
+
+    .hero-section {
+        margin-top: 68px;
+        height: 540px;
+        min-height: 540px;
+    }
+
+    .hero-section .carousel-item {
+        height: 540px;
+        min-height: 540px;
+    }
+
+    .hero-section .carousel-caption {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-bottom: 2.5rem !important;
+    }
+
+    .ene-hero-title {
+        font-size: 2.85rem !important;
+        margin-bottom: 0.45rem !important;
+    }
+
+    .ene-hero-subtitle {
+        font-size: 1.15rem !important;
+        line-height: 1.2;
+        max-width: 300px;
+        margin-bottom: 0.9rem !important;
+    }
+
+    .ene-hero-cta {
+        font-size: 0.95rem;
+        padding: 0.7rem 1.2rem !important;
+        border-radius: 2px;
+    }
+
+    .welcome-section {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .welcome-section .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .welcome-section .row {
+        padding: 1rem !important;
+        border-radius: 0;
+    }
+
+    .welcome-section h2 {
+        font-size: 2rem !important;
+        line-height: 1.05;
+        margin-bottom: 0.7rem !important;
+    }
+
+    .welcome-section .lead {
+        font-size: 0.95rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 0.9rem !important;
+    }
+
+    .welcome-section .col-lg-5 img {
+        width: 56%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .ene-tab {
+        font-size: 0.68rem;
+        padding: 0.78rem 0.22rem;
+        letter-spacing: 0;
+    }
+
+    .proposal-section {
+        padding-top: 1.1rem !important;
+        padding-bottom: 1.1rem !important;
+    }
+
+    .proposal-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 0.15rem !important;
+    }
+
+    .proposal-section p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.8rem !important;
+        line-height: 1.2;
+    }
+
+    .proposal-section .col-md-4:nth-child(n+2) {
+        display: none;
+    }
+
+    .proposal-section .card-img {
+        min-height: 360px !important;
+    }
+
+    .proposal-section .btn-danger {
+        border-radius: 5px;
+        font-size: 0.84rem;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .school-life {
+        margin-top: 1rem !important;
+    }
+
+    .school-life-carousel,
+    .school-life-img {
+        height: 230px !important;
+    }
+
+    .school-life-caption {
+        align-items: center;
+        text-align: center;
+    }
+
+    .school-life-caption .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .school-life-title {
+        font-size: 2rem;
+    }
+
+    .school-life-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .school-life-cta {
+        margin-top: 0.7rem !important;
+        font-size: 0.85rem;
+        padding: 0.5rem 1.1rem !important;
+    }
+
+    .news-section {
+        margin-top: 0.9rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1.2rem !important;
+    }
+
+    .news-section .container {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .news-section h2 {
+        font-size: 1.95rem !important;
+        line-height: 1.02;
+    }
+
+    .news-section .col-md-4:nth-child(n+2) {
+        display: none;
+    }
+
+    .news-img {
+        height: 175px;
+    }
+
+    .news-section .btn-warning {
+        width: 84%;
+        max-width: 280px;
+        font-size: 0.92rem;
+        border-radius: 6px;
+        text-transform: none;
+        letter-spacing: 0;
+    }
+
+    .contact-section {
+        margin-top: 0.9rem !important;
+        padding-top: 1.45rem !important;
+        padding-bottom: 1.45rem !important;
+    }
+
+    .contact-section h2 {
+        font-size: 2.2rem !important;
+    }
+
+    .contact-section .lead {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .contact-section .fs-5 {
+        font-size: 0.82rem !important;
+    }
+
+    .contact-section .form-control {
+        font-size: 0.8rem;
+        height: 36px;
+        border-radius: 2px;
+    }
+
+    .contact-section textarea.form-control {
+        height: 62px;
+    }
+
+    .contact-section .btn-danger {
+        border-radius: 0;
+        text-transform: none;
+        letter-spacing: 0;
+        font-size: 1.05rem;
+    }
+
+    #footer {
+        padding-top: 1.35rem !important;
+        padding-bottom: 0.65rem !important;
+    }
+
+    #footer .col-md-4,
+    #footer .col-md-2,
+    #footer .col-md-3 {
+        margin-bottom: 0.9rem !important;
+    }
+
+    #footer img[alt="Logo Nombre"] {
+        max-height: 92px !important;
+        display: block;
+        margin: 0 auto 0.3rem auto;
+    }
+
+    #footer .social-icons {
+        justify-content: center;
+    }
+
+    #footer .float-end {
+        float: none !important;
+        display: inline-block;
+        margin-top: 0.45rem;
+    }
+}
+
+/* Botón lupa del buscador en la barra superior */
+.ene-ai-nav-trigger {
+    width: 2.65rem;
+    height: 2.65rem;
+    padding: 0 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    font-size: 1.05rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.ene-ai-nav-trigger:hover,
+.ene-ai-nav-trigger:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Lista de resultados del buscador (estilo listado enlazable) */
+.ene-ai-nav-results {
+    max-height: min(55vh, 28rem);
+    overflow-y: auto;
+    border-radius: 0.375rem;
+}
+
+.ene-ai-nav-results .ene-ai-nav-hit {
+    border-left: 3px solid transparent;
+}
+
+.ene-ai-nav-results .ene-ai-nav-hit:hover,
+.ene-ai-nav-results .ene-ai-nav-hit:focus {
+    border-left-color: var(--bs-primary, #0d6efd);
+    background-color: rgba(13, 110, 253, 0.06);
+}
+
+.ene-ai-nav-hit-title {
+    color: #1a0dab;
+}
